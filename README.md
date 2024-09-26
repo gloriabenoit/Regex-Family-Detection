@@ -1,11 +1,41 @@
-# Détection de motifs de familles protéiques par expressions régulières (L3BI - 2022)
-Ce notebook est la production du cours de Programmation Python 2 de ma L3 à Université Paris Cité, organisé par M. Pierre Poulain. Ce projet visait à détecter l'appartenance d'une protéine à une famille à partir d'une signature retrouvée dans sa
-séquence, grâce aux expressions régulières.
+# Protein family pattern detection using regular expressions
+December 2022 (L3 BI)
 
-## Installation
+## Introduction
 
-Nous avons utilisé les packages `re` et `urllib.request` pour respectivement détecter un motif et récupérer la fiche d'une protéine. Nous avons aussi utilisé `BioPython`, une alternative à nos récupérations *PROSITE*.
+This project aims to detect a protein's family from a signature found in its sequence, using regular expressions.
+All protein domains and families are found on the [PROSITE](https://prosite.expasy.org/) database. 
+PROSITE consists of documentation entries describing protein domains, families and functional sites as well as associated patterns and profiles to identify them.
 
-## Fonctionnement
+Starting from a *PROSITE* motif, we have automated its translation into a regular expression so that it can be searched in sequences. 
 
-A partir d'un motif *PROSITE*, nous avons automatisé sa traduction en expression régulière pour pouvoir le rechercher dans des séquences. 
+## Setup
+
+To install the algorithm and its dependencies, you need to perform the following steps:
+
+### Clone the repository
+
+```bash
+git clone https://github.com/gloriabenoit/Regex-Family-Domain.git
+
+cd Regex-Family-Domain
+```
+
+### Install [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html)
+
+### Create a Conda environment
+
+```bash
+conda env create -f environment.yml
+```
+
+### Activate the Conda environment
+
+```bash
+conda activate regex-family-detection
+```
+
+## Usage
+
+`Detection_MotifProtéine.ipynb` takes you through everything you need to know about the project, while `demo.py` is pure code.
+

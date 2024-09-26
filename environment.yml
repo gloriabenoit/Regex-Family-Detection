@@ -1,0 +1,9 @@
+name: regex-family-detection
+channels:
+    - conda-forge
+    - bioconda
+    - nodefaults
+dependencies:
+    - python
+    - jupyterlab
+    - biopython
