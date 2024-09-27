@@ -37,5 +37,6 @@ conda activate regex-family-detection
 
 ## Usage
 
-`Detection_MotifProtéine.ipynb` takes you through everything you need to know about the project, while `demo.py` is pure code.
-
+```bash
+jupyter notebook src/Detection_MotifProtéine.ipynb
+```
